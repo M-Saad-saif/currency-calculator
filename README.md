@@ -2,7 +2,7 @@
 
 A simple and interactive **Currency Converter Calculator** built with **HTML, CSS, and JavaScript**, that converts **Pakistani Rupees (PKR)** into multiple currencies.  
 
-✨ **Live Demo** → [Click Here](https://your-github-username.github.io/your-repo-name/)  
+✨ **Live Demo** → [Click Here](https://m-saad-saif.github.io/currency-calculator/)  
 
 ---
 
