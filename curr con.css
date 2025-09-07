@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbfffc;
+}
+
+
+
+.container {
+    border: 0.5px solid blue;
+    text-align: center;
+    background: rgb(232, 243, 250);
+    width: 25%;
+    justify-self: anchor-center;
+    padding: 22px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.text-area {
+    border: 1px solid blue;
+    font-size: 20px;
+    background: white;
+    width: 95%;
+    border-radius: 5px;
+    justify-self: anchor-center;
+}
+
+.text-area-container {
+    display: flex;
+    /* justify-self: center;s */
+}
+
+.box {
+    width: 50%;
+}
+
+.allbuttons {
+    margin-top: 10px;
+}
+
+.buttons {
+    font-size: 23px;
+    width: 31%;
+    text-align: center;
+    padding: 6px;
+    margin-top: 4px;
+    height: 9vh;
+    border-radius: 3px;
+    border: 0.5px solid blue;
+    background-color: rgba(0, 102, 255, 0.192);
+    transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+.buttons:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: rgba(0, 102, 255, 0.372);
+}
+
+#convert-btn {
+    width: 95%;
+    margin-left: 1px;
+    background-color: rgb(28, 160, 254);
+    transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+#convert-btn:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: rgb(0, 149, 255);
+}
+
+#row4 {
+    justify-self: anchor-center;
+    width: 151%;
+}
+
+#row5 {
+    display: flex;
+    justify-self: anchor-center;
+    width: 96%;
+}
+
+#currency-selection {
+    background: #b6dcf8;
+    margin-top: 15px;
+    font-size: 15px;
+    border: 1px solid blue;
+    border-radius: 3px;
+    
+}
+
+#currency-selection option {
+    background-color: #b6dcf8;
+    transition: tranforms 0.1s ease-in-out;
+    border: 1px solid blue;
+
+}
+
+.heading{
+        background: blue;
+    color: white;
+    text-align: center;
+    width: 98%;
+    justify-self: anchor-center;
+    margin-top: 11px;
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 750px) {
+
+    .container {
+        width: 80%;
+        margin-top: 30%;
+    }
+
+    .buttons {
+        height: 6vh;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="currency cal icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="curr con.css">
+    <title>Currency Converter | SAAD</title>
+</head>
+
+<body>
+
+    <h2 class="heading">Currency Converter<i class="fi fi-sr-convert-shapes"></i></h2>
+
+    <div class="container">
+        <div class="text-area-container">
+            <div class="box">
+                <p class="label">PKR</p>
+                <p class="text-area" id="pkr-area">...</p>
+            </div>
+            <div class="box">
+                <p class="label">USD</p>
+                <p class="text-area" id="seleted-area">...</p>
+            </div>
+        </div>
+
+
+
+        <select id="currency-selection">
+            <option>Select Currency</option>
+            <option value="america">American Dollar</option>
+            <option value="india">Indian Rupee</option>
+            <option value="turkey">Turkey Lire</option>
+            <option value="afghan">Afghan</option>
+            <option value="Canada">Canada</option>
+            <option value="china">China</option>
+        </select>
+
+        <div class="allbuttons">
+            <div id="row1">
+                <button class="buttons">7</button>
+                <button class="buttons">8</button>
+                <button class="buttons">9</button>
+            </div>
+
+            <div id="row2">
+                <button class="buttons">4</button>
+                <button class="buttons">5</button>
+                <button class="buttons">6</button>
+            </div>
+
+            <div id="row3">
+                <button class="buttons">1</button>
+                <button class="buttons">2</button>
+                <button class="buttons">3</button>
+            </div>
+
+            <div id="row4">
+                <button class="buttons">.</button>
+                <button class="buttons">0</button>
+            </div>
+
+            <div id="row5">
+                <button class="buttons" id="convert-btn">Convert</button>
+                <button class="buttons clearBtn" id="convert-btn">Clear</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="curr con.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log("service worker register at", reg.scope)
+                    }).catch((err) => {
+                        console.log("service worker register failed at ", err)
+                    })
+            })
+        }
+    </script>
+
+</body>
+
+</html>
