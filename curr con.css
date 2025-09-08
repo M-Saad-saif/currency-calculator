@@ -32,6 +32,7 @@ body {
     width: 95%;
     border-radius: 5px;
     justify-self: anchor-center;
+    overflow: hidden;
 }
 
 .text-area-container {
@@ -67,7 +68,7 @@ body {
 }
 
 #convert-btn {
-    width: 95%;
+    width: 99%;
     margin-left: 1px;
     background-color: rgb(28, 160, 254);
     transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
@@ -90,24 +91,28 @@ body {
     width: 96%;
 }
 
-#currency-selection {
+#currency-selection,
+#currency-selection-self {
     background: #b6dcf8;
-    margin-top: 15px;
+    margin-top: 4px;
     font-size: 15px;
+    width: 89%;
+    background-color: #1ca0feb8;
     border: 1px solid blue;
     border-radius: 3px;
-    
+
 }
 
-#currency-selection option {
+#currency-selection option,
+#currency-selection-self option {
     background-color: #b6dcf8;
     transition: tranforms 0.1s ease-in-out;
     border: 1px solid blue;
 
 }
 
-.heading{
-        background: blue;
+.heading {
+    background: blue;
     color: white;
     text-align: center;
     width: 98%;
