@@ -16,26 +16,44 @@
     <div class="container">
         <div class="text-area-container">
             <div class="box">
-                <p class="label">PKR</p>
+                <p class="label" id="label1">Select Currency</p>
                 <p class="text-area" id="pkr-area">...</p>
+                
+                <select id="currency-selection-self">
+                    <option>Select Currency</option>
+                    <option value="america">American Dollar</option>
+                    <option value="india">Indian Rupee</option>
+                    <option value="turkey">Turkey Lire</option>
+                    <option value="afghan">Afghan</option>
+                    <option value="Canada">Canada</option>
+                    <option value="china">China</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
             </div>
             <div class="box">
-                <p class="label">USD</p>
+                <p class="label">Select Currency</p>
                 <p class="text-area" id="seleted-area">...</p>
+
+                <select id="currency-selection">
+                    <option>Select Currency</option>
+                    <option value="america">American Dollar</option>
+                    <option value="india">Indian Rupee</option>
+                    <option value="turkey">Turkey Lire</option>
+                    <option value="afghan">Afghan</option>
+                    <option value="Canada">Canada</option>
+                    <option value="china">China</option>
+                    <option value="Pakistan">Pakistan</option>
+
+                </select>
             </div>
         </div>
 
+        <div id="selection">
 
 
-        <select id="currency-selection">
-            <option>Select Currency</option>
-            <option value="america">American Dollar</option>
-            <option value="india">Indian Rupee</option>
-            <option value="turkey">Turkey Lire</option>
-            <option value="afghan">Afghan</option>
-            <option value="Canada">Canada</option>
-            <option value="china">China</option>
-        </select>
+
+
+        </div>
 
         <div class="allbuttons">
             <div id="row1">
@@ -62,7 +80,7 @@
             </div>
 
             <div id="row5">
-                <button class="buttons" id="convert-btn">Convert</button>
+                <!-- <button class="buttons" id="convert-btn">Convert</button> -->
                 <button class="buttons clearBtn" id="convert-btn">Clear</button>
 
             </div>
@@ -73,8 +91,8 @@
     </div>
 
     <script src="curr con.js"></script>
-    <script>
-        if ("serviceWorker" in navigator) {
+<!--     <script>
+      if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
                 navigator.serviceWorker.register('service-worker.js')
                     .then((reg) => {
@@ -83,9 +101,9 @@
                         console.log("service worker register failed at ", err)
                     })
             })
-        }
+        } 
     </script>
-
+ -->
 </body>
 
 </html>
